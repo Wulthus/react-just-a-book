@@ -1,0 +1,58 @@
+
+
+/* ////////////////////////////////////////////////////////////////////// */
+
+.book__cover {
+    background-color: #fff;
+    display: inline-block;
+    padding: 1.2rem 1.2rem;
+    border-radius: 7px;
+    background-image: url(../public/textures/leather-bg2.webp);
+    background-size: 300px;
+    transition: all .2s;
+    box-sizing: border-box;
+}
+
+.book__cover--portrait-disabled {
+    display: inline-block;
+}
+
+
+.book__pages-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 160rem;
+    perspective-origin: top;
+    box-sizing: border-box;
+
+    position: relative;
+}
+/* //////////////////////////////////////////////////////////////////// */
+
+.book-dropped {
+    animation: ease-out .5s drop;
+    transform: translateY(110vh); 
+}
+
+@keyframes drop {
+    0% {
+        transform: translateY(0);
+    }
+    
+    40% {
+        transform: translateY(-5vh);
+    }
+
+    100% {
+        transform: translateY(110vh); 
+    }
+}
+
+/* ////////////////////////////////////////////////////////////////// */
+
+@media (orientation: portrait) {
+    .book__cover-portrait-disabled {
+        display: none;
+    }
+}

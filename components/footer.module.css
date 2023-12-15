@@ -1,0 +1,73 @@
+.footer {
+    font-size: 2rem;
+    padding: 1dvw;
+    
+    font-family: Merienda, serif;
+
+    color: #606060;
+    text-align: end;
+    font-weight: 500;
+    display: none;
+}
+
+.footer a:link,
+.footer a:visited {
+    text-decoration: none;
+    color: inherit;
+    border-bottom: solid 1px;
+    transition: all .2s;
+    display: inline-block;
+    /* animation: .2s pickMe infinite;
+    animation-delay: 4s; */
+}
+
+.footer a:hover {
+    animation: .5s goldenFlash infinite;
+}
+
+.footer a:active {
+    transform: scale(1.15);
+}
+
+/* /////////////////////////////////////////////// */
+
+@keyframes goldenFlash {
+    0% {
+        color: var(--color-button-hover);
+    }
+
+    50% {
+        color: rgb(255, 221, 0);
+    }
+
+    100% {
+        color: var(--color-button-hover);
+    }
+}
+
+/* ///////////////////////////////////////////////// */
+
+/* @media (max-height: 500px) {
+    .footer {
+        padding: .5dvw;
+        font-size: 1.5rem;
+    }
+
+} */
+
+@media (max-height: 520px) {
+    .footer {
+        display: none;
+    }
+
+}
+
+@media (orientation: portrait) {
+    
+    .footer {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+    }
+
+}

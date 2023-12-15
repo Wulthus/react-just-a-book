@@ -1,0 +1,36 @@
+.cover {
+    display: block;
+    box-sizing: border-box;
+    background-color: #fff;
+    width: 47dvw;
+    height: 80dvh;
+    background-size: cover;
+
+    padding: 4rem;
+    color: var(--color-font-base);
+    border: 1px solid #7f7f7f;
+    display: grid;
+    align-content: center;
+}
+
+/*////////////////////////////////////////*/
+
+.cover--left {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../../public/textures/paper-bg.webp');
+    border-left: solid 1px rgba(0, 0, 0, 0.15);
+}
+
+.cover--right {
+    backface-visibility: hidden;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../../public/textures/paper-bg.webp');
+    border-right: solid 1px rgba(0, 0, 0, 0.15);
+}
+
+/*////////////////////////////////////////*/
+
+@media (max-height: 520px) {
+    .cover {
+        width: 48dvw;
+        height: 90dvh;
+    }
+}

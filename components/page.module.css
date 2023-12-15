@@ -1,0 +1,18 @@
+.book__page {
+    transform-origin: left;
+    transform: rotate3d(0, -10, 0, 0deg);
+    transform-style: preserve-3d;
+    position: absolute;
+
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 50%;
+    transition: all .6s;
+    z-index: 1;
+}
+
+.flipped {
+    transform: rotate3d(0, 10, 0, -180deg);
+    z-index: 0;
+}
